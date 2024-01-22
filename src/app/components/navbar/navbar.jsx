@@ -1,11 +1,13 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import logopic from "/public/logopic.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,7 +16,9 @@ export default function Navbar() {
   const handleClose = () => {
     setIsMenuOpen(false);
   };
-  const handleLinkClick = () => {
+  const handleLinkClick = (e, href) => {
+    e.preventDefault();
+    router.push(href);
     handleClose();
   };
 
@@ -69,37 +73,33 @@ export default function Navbar() {
               </button>
             </div>
 
-            <Link href="#landingSection">
-              <p
-                onClick={handleLinkClick}
-                className="block p-2 hover:bg-[#02b9b4]"
-              >
-                Home
-              </p>
+            <Link
+              href="#landingSection"
+              onClick={(e) => handleLinkClick(e, "#landingSection")}
+              className="block p-2 hover:bg-[#02b9b4]"
+            >
+              Home
             </Link>
-            <Link href="#projectsSection">
-              <p
-                onClick={handleLinkClick}
-                className="block p-2 hover:bg-[#02b9b4]"
-              >
-                Projects
-              </p>
+            <Link
+              href="#projectsSection"
+              onClick={(e) => handleLinkClick(e, "#projectsSection")}
+              className="block p-2 hover:bg-[#02b9b4]"
+            >
+              Projects
             </Link>
-            <Link href="#aboutSection">
-              <p
-                onClick={handleLinkClick}
-                className="block p-2 hover:bg-[#02b9b4]"
-              >
-                About
-              </p>
+            <Link
+              href="#aboutSection"
+              onClick={(e) => handleLinkClick(e, "#aboutSection")}
+              className="block p-2 hover:bg-[#02b9b4]"
+            >
+              About
             </Link>
-            <Link href="#contactSection">
-              <p
-                onClick={handleLinkClick}
-                className="block p-2 hover:bg-[#02b9b4]"
-              >
-                Contact
-              </p>
+            <Link
+              href="#contactSection"
+              onClick={(e) => handleLinkClick(e, "#contactSection")}
+              className="block p-2 hover:bg-[#02b9b4]"
+            >
+              Contact
             </Link>
           </div>
         )}
