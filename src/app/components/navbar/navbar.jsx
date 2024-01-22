@@ -30,6 +30,16 @@ export default function Navbar() {
     handleClose();
   };
 
+  const handleLinkClickDesktop = (e, href) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="flex z-10 items-center justify-between fixed min-w-full md:p-2">
       <div className="flex items-center md:p-2 transition duration-300 ease-in-out transform ">
@@ -114,25 +124,37 @@ export default function Navbar() {
       </div>
       {/* Desktop navigation */}
       <div className="hidden md:flex md:-translate-x-10 text-white font-bold text-lg gap-10">
-        <Link href="#landingSection">
-          <p className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
+        <Link
+          href="#landingSection"
+          onClick={(e) => handleLinkClickDesktop(e, "#landingSection")}
+        >
+          <button className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
             Home
-          </p>
+          </button>
         </Link>
-        <Link href="#projectsSection">
-          <p className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
+        <Link
+          href="#projectsSection"
+          onClick={(e) => handleLinkClickDesktop(e, "#projectsSection")}
+        >
+          <button className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
             Projects
-          </p>
+          </button>
         </Link>
-        <Link href="#aboutSection">
-          <p className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
+        <Link
+          href="#aboutSection"
+          onClick={(e) => handleLinkClickDesktop(e, "#aboutSection")}
+        >
+          <button className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
             About
-          </p>
+          </button>
         </Link>
-        <Link href="#contactSection">
-          <p className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
+        <Link
+          href="#contactSection"
+          onClick={(e) => handleLinkClickDesktop(e, "#contactSection")}
+        >
+          <button className="hover:bg-gradient-to-tr hover:from-[#02b9b4] hover:to-[#C4C1CF] hover:text-transparent hover:bg-clip-text hover:font-bold hover:pr-2">
             Contact
-          </p>
+          </button>
         </Link>
       </div>
     </div>
