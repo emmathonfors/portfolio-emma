@@ -10,9 +10,7 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 export default function Contact() {
   const [formStatus, setFormStatus] = useState(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [animationInitialized, setAnimationInitialized] = useState(false);
 
-  const animationContainer = useRef(null);
   const topImageRef = useRef(null);
 
   const handleScroll = () => {

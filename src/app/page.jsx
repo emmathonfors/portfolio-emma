@@ -1,6 +1,6 @@
 import About from "./about/page";
 import Projects from "./projects/page";
-import Contact from "./contact/Page";
+import Contact from "./contact/page";
 import LandingPage from "./landingpage/page";
 import TechStack from "./components/techStack";
 import Navbar from "./components/navbar/navbar";
