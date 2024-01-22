@@ -18,7 +18,15 @@ export default function Navbar() {
   };
   const handleLinkClick = (e, href) => {
     e.preventDefault();
-    router.push(href);
+
+    const targetElement = document.querySelector(href);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
     handleClose();
   };
 
