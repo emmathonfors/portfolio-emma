@@ -1,33 +1,19 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import Lottie from "lottie-web";
 import topImage from "/public/top.png";
 import Image from "next/image";
 import "../globals.css";
+import dynamic from "next/dynamic";
 import animation from "../assets/contactAnimation.json";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function Contact() {
   const [formStatus, setFormStatus] = useState(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [animationInitialized, setAnimationInitialized] = useState(false);
 
   const animationContainer = useRef(null);
   const topImageRef = useRef(null);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const anim = Lottie.loadAnimation({
-        container: animationContainer.current,
-        animationData: animation,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-      });
-
-      return () => {
-        anim.destroy();
-      };
-    }
-  }, []);
 
   const handleScroll = () => {
     const scrollThreshold = 200;
@@ -96,7 +82,7 @@ export default function Contact() {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
             Contact Me
           </h2>
-          <div className=" h-52 w-52" ref={animationContainer}></div>
+          <Lottie className="h-60 w-60" animationData={animation} />{" "}
         </div>
 
         <form onSubmit={handleSubmit}>
