@@ -80,7 +80,7 @@ export default function Projects() {
                 </div>
                 <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a href="https://world-clock-chi.vercel.app/" target="_blank">
-                    <div className="flex sm:justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center">Take A Peek</p>
                       <p className="flex items-end">
                         <Image src={peek} width={42} height={30} />
