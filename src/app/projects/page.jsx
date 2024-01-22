@@ -78,10 +78,10 @@ export default function Projects() {
                     was to learn React Router and Tailwind CSS.
                   </p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a href="https://world-clock-chi.vercel.app/" target="_blank">
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center"> Take A Peek</p>
+                    <div className="flex sm:justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                      <p className="flex items-center">Take A Peek</p>
                       <p className="flex items-end">
                         <Image src={peek} width={42} height={30} />
                       </p>
@@ -91,7 +91,7 @@ export default function Projects() {
                     href="https://github.com/EmmaJohanssons/WorldClockChas"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center">See Code </p>
                       <p className="flex items-end">
                         <Image src={computer} width={40} height={30} />
@@ -145,12 +145,12 @@ export default function Projects() {
                     Native, with an API integration for real-time weather data.
                   </p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a
                     href="https://symphonious-maamoul-c13734.netlify.app/"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center">Take A Peek</p>
                       <p className="flex items-end">
                         <Image src={peek} width={42} height={30} />
@@ -161,7 +161,7 @@ export default function Projects() {
                     href="https://github.com/EmmaJohanssons/weatherCado"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center"> See Code</p>
                       <p className="flex items-end">
                         <Image src={computer} width={40} height={30} />
@@ -222,9 +222,9 @@ export default function Projects() {
                     questions yourself.
                   </p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a href="https://quiz-redux-lime.vercel.app/" target="_blank">
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center">Take A Peek</p>
                       <p className="flex items-end">
                         <Image src={peek} width={42} height={30} />
@@ -235,7 +235,7 @@ export default function Projects() {
                     href="https://github.com/EmmaJohanssons/reduxQuiz"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center"> See Code</p>
                       <p className="flex items-end">
                         <Image src={computer} width={40} height={30} />
@@ -302,12 +302,12 @@ export default function Projects() {
                     professions.
                   </p>
                 </div>
-                <div className="flex items-center justify-center ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a
                     href="https://gitlab.com/melinaasplund/chaschallenge"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-4 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-4 hover:bg-[#02b9b4]">
                       <p className="flex items-center">See Code</p>
                       <p className="flex items-end">
                         <Image src={computer} width={40} height={30} />
@@ -372,12 +372,12 @@ export default function Projects() {
                     webshop with registration and login features.
                   </p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a
                     href="https://rebel-runway-webshop-oouc4s4mi-chasacademy-linnea-svensson.vercel.app/clothes"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center"> Take A Peek</p>
                       <p className="flex items-end">
                         <Image src={peek} width={42} height={30} />
@@ -388,7 +388,7 @@ export default function Projects() {
                     href="https://github.com/ChasAcademy-Linnea-Svensson/RebelRunway"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center"> See Code</p>
                       <p className="flex items-end">
                         <Image src={computer} width={40} height={30} />
@@ -448,12 +448,12 @@ export default function Projects() {
                     companion for moments when you need someone to lean on.
                   </p>
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a
                     href="https://ai-panda-pal-qyxo.vercel.app/"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center"> Take A Peek</p>
                       <p className="flex items-end">
                         <Image src={peek} width={42} height={30} />
@@ -464,7 +464,7 @@ export default function Projects() {
                     href="https://github.com/chasacademy-EmmaJohansson/AI-PandaPal"
                     target="_blank"
                   >
-                    <div className="flex gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                       <p className="flex items-center"> See Code</p>
                       <p className="flex items-end">
                         <Image src={computer} width={40} height={30} />
