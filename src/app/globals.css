@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@keyframes slideAndRotate {
+  0% {
+    transform: translateX(-280%) translateY(-50%) rotate(0deg);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  50% {
+    transform: translateX(-100) translateY(10%) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) rotate(360deg);
   }
 }
+.flying-image-container {
+  position: fixed;
+  bottom: 20px;
+  transition: bottom 0.5s ease; /* Lägg till en övergångseffekt */
+}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#backToTopButton {
+  visibility: hidden;
 }
