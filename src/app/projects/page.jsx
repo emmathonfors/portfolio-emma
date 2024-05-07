@@ -6,12 +6,14 @@ import peek from "/public/peek.png";
 import computer from "/public/computer.png";
 import avocados from "/public/avocado1.png";
 import worldClock from "/public/worldclock.png";
-import quiz from "/public/quiz.jpg";
 import primus from "/public/primus.png";
 import chas from "/public/chas.png";
 import rebel from "/public/rebel.png";
 import runway from "/public/runway.png";
 import pandapal from "/public/pandapal.png";
+import adsaver from "/public/adsaver.png";
+import adsaver2 from "/public/adsaver2.png";
+import adsaver3 from "/public/adsaver3.png";
 
 export default function Projects() {
   const [flipped1, setFlipped1] = useState(false);
@@ -178,82 +180,6 @@ export default function Projects() {
               onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
-              <div className="flex h-full flex-col justify-around items-center">
-                <p className="text-white font-bold text-xl">Quiz</p>
-                <div className="flex w-full justify-around">
-                  <p className="text-white text-sm">
-                    <span>⚪</span>NextJS
-                  </p>
-
-                  <p className="text-white text-sm">
-                    <span>⚪</span>Redux
-                  </p>
-
-                  <p className="text-white text-sm">
-                    <span>⚪Tailwind</span>
-                  </p>
-                </div>
-                <Image
-                  src={quiz}
-                  alt="Project Image"
-                  width={900}
-                  height={900}
-                  className="rounded-md object-cover"
-                />
-              </div>
-            </div>
-
-            <div
-              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped3((prev) => !prev)}
-              style={glassCardStyle}
-            >
-              <div className="flex flex-col justify-evenly h-full">
-                <div>
-                  <p className="text-white text-xl font-bold text-center">
-                    Quiz
-                  </p>
-                </div>
-
-                <div className="text-white text-center">
-                  <p>
-                    A school project focused on learning Redux. In this project
-                    you can take a quiz but also be an admin and update the
-                    questions yourself.
-                  </p>
-                </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
-                  <a href="https://quiz-redux-lime.vercel.app/" target="_blank">
-                    <div className="flex justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center">Take A Peek</p>
-                      <p className="flex items-end">
-                        <Image src={peek} width={42} height={30} />
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/EmmaJohanssons/reduxQuiz"
-                    target="_blank"
-                  >
-                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center"> See Code</p>
-                      <p className="flex items-end">
-                        <Image src={computer} width={40} height={30} />
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </ReactCardFlip>
-        </div>
-        <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
-          <ReactCardFlip isFlipped={flipped4} flipDirection="horizontal">
-            <div
-              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped4((prev) => !prev)}
-              style={glassCardStyle}
-            >
               <div className="flex  h-full flex-col justify-around items-center">
                 <p className="text-white font-bold text-xl">Chas Challenge</p>
                 <div className="flex justify-around w-full">
@@ -283,7 +209,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped4((prev) => !prev)}
+              onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -302,7 +228,7 @@ export default function Projects() {
                     professions.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
                   <a
                     href="https://gitlab.com/melinaasplund/chaschallenge"
                     target="_blank"
@@ -318,10 +244,12 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={flipped5} flipDirection="horizontal">
+        </div>
+        <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
+          <ReactCardFlip isFlipped={flipped4} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped5((prev) => !prev)}
+              onClick={() => setFlipped4((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -354,7 +282,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped5((prev) => !prev)}
+              onClick={() => setFlipped4((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -374,7 +302,7 @@ export default function Projects() {
                 </div>
                 <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a
-                    href="https://rebel-runway-webshop-oouc4s4mi-chasacademy-linnea-svensson.vercel.app/clothes"
+                    href="https://rebel-runway-webshop-oouc4s4mi-chasacademy-linnea-svensson.vercel.app/"
                     target="_blank"
                   >
                     <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
@@ -399,11 +327,10 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-
-          <ReactCardFlip isFlipped={flipped6} flipDirection="horizontal">
+          <ReactCardFlip isFlipped={flipped5} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped6((prev) => !prev)}
+              onClick={() => setFlipped5((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -418,7 +345,7 @@ export default function Projects() {
                   </p>
 
                   <p className="text-white text-sm">
-                    <span>⚪Tailwind</span>
+                    <span>⚪Express</span>
                   </p>
                 </div>
                 <Image
@@ -431,7 +358,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped6((prev) => !prev)}
+              onClick={() => setFlipped5((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -475,17 +402,82 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
+
+          <ReactCardFlip isFlipped={flipped6} flipDirection="horizontal">
+            <div
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
+              onClick={() => setFlipped6((prev) => !prev)}
+              style={glassCardStyle}
+            >
+              <div className="flex  h-full flex-col justify-around items-center">
+                <p className="text-white font-bold text-xl">AdSaver</p>
+                <div className="flex justify-around w-full">
+                  <p className="text-white text-sm">
+                    <span>⚪</span>NextJS
+                  </p>
+
+                  <p className="text-white text-sm">
+                    <span>⚪</span>PayPal
+                  </p>
+                  <p className="text-white text-sm">
+                    <span>⚪</span>Firebase
+                  </p>
+                </div>
+                <Image
+                  src={adsaver}
+                  alt="Project Image"
+                  className="rounded-md  "
+                />
+                {/* <Image
+                  src={adsaver2}
+                  alt="Project Image"
+                  className="rounded-md   object-cover"
+                /> */}
+                <Image
+                  src={adsaver3}
+                  alt="Project Image"
+                  className="rounded-md   object-cover"
+                />
+              </div>
+            </div>
+
+            <div
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
+              onClick={() => setFlipped6((prev) => !prev)}
+              style={glassCardStyle}
+            >
+              <div className="flex flex-col justify-evenly h-full">
+                <div>
+                  <p className="text-white text-xl font-bold text-center">
+                    AdSaver <br />
+                    <span className=" font-semibold italic">Internship</span>
+                  </p>
+                </div>
+
+                <div className="text-white text-center">
+                  <p>
+                    We developed AdSaver to simplify the creation of Google Ads.{" "}
+                    Our website allows you to easily create, save, or copy ads.{" "}
+                    You will also have a better overview of your saved ads, and
+                    be able to reuse or edit them for future campaigns.
+                  </p>
+                </div>
+                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
+                  <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                    <a href="https://adsaver.org" target="_blank">
+                      <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                        <p className="flex items-center"> Take A Peek</p>
+                        <p className="flex items-end">
+                          <Image src={peek} width={42} height={30} />
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ReactCardFlip>
         </div>
-      </div>
-      <div className=" p-6 mt-6 flex items-center justify-center ">
-        <p className="text-white italic md:text-center md:w-1/2 p-4 border-t-2 border-b-2 rounded-md">
-          Here's a brief overview of my school journey. The first three projects
-          at the top were created during the first year, and as you can see, my
-          skills have developed and grown since then. <br /> I aim to continue
-          developing these skills, not only because I find it incredibly
-          enjoyable but also to absorb as much knowledge as possible and prepare
-          myself for future career opportunities
-        </p>
       </div>
     </div>
   );
