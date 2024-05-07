@@ -90,7 +90,7 @@ export default function Projects() {
                     </div>
                   </a>
                   <a
-                    href="https://github.com/EmmaJohanssons/WorldClockChas"
+                    href="https://github.com/Emma-Johanssons/WorldClockChas"
                     target="_blank"
                   >
                     <div className="flex justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
@@ -160,7 +160,7 @@ export default function Projects() {
                     </div>
                   </a>
                   <a
-                    href="https://github.com/EmmaJohanssons/weatherCado"
+                    href="https://github.com/Emma-Johanssons/weatherApp"
                     target="_blank"
                   >
                     <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
@@ -388,7 +388,7 @@ export default function Projects() {
                     </div>
                   </a>
                   <a
-                    href="https://github.com/chasacademy-EmmaJohansson/AI-PandaPal"
+                    href="https://github.com/Emma-Johanssons/AI-PandaPal"
                     target="_blank"
                   >
                     <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
