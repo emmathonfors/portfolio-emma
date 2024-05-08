@@ -45,10 +45,7 @@ export default function About() {
                 {" "}
                 <BsLinkedin className="text-white text-2xl hover:text-[#02b9b4]" />
               </a>
-              <a
-                href="https://github.com/chasacademy-EmmaJohansson"
-                target="_blank"
-              >
+              <a href="https://github.com/Emma-Johanssons" target="_blank">
                 <FaGithub className="text-white text-2xl hover:text-[#02b9b4]" />
               </a>
               <a href={`mailto:${`mailtoemmajohansson@gmail.com`}`}>

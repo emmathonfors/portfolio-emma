@@ -149,7 +149,7 @@ export default function Projects() {
                 </div>
                 <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                   <a
-                    href="https://symphonious-maamoul-c13734.netlify.app/"
+                    href="https://weather-cado-next.vercel.app/Home"
                     target="_blank"
                   >
                     <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
