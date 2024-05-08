@@ -300,29 +300,22 @@ export default function Projects() {
                     webshop with registration and login features.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
-                  <a
-                    href="https://rebel-runway-webshop-oouc4s4mi-chasacademy-linnea-svensson.vercel.app/"
-                    target="_blank"
-                  >
-                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center"> Take A Peek</p>
-                      <p className="flex items-end">
-                        <Image src={peek} width={42} height={30} />
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/ChasAcademy-Linnea-Svensson/RebelRunway"
-                    target="_blank"
-                  >
-                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center"> See Code</p>
-                      <p className="flex items-end">
-                        <Image src={computer} width={40} height={30} />
-                      </p>
-                    </div>
-                  </a>
+
+                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
+                  <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                    <a
+                      href="https://github.com/ChasAcademy-Linnea-Svensson/RebelRunway"
+                      target="_blank"
+                    >
+                      {" "}
+                      <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                        <p className="flex items-center"> See Code</p>
+                        <p className="flex items-end">
+                          <Image src={computer} width={40} height={30} />
+                        </p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
