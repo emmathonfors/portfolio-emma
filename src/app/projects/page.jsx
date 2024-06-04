@@ -12,8 +12,9 @@ import rebel from "/public/rebel.png";
 import runway from "/public/runway.png";
 import pandapal from "/public/pandapal.png";
 import adsaver from "/public/adsaver.png";
-import adsaver2 from "/public/adsaver2.png";
 import adsaver3 from "/public/adsaver3.png";
+import mentatt1 from "/public/mentatt1.png";
+import mentatt2 from "/public/mentatt2.png";
 
 export default function Projects() {
   const [flipped1, setFlipped1] = useState(false);
@@ -35,79 +36,8 @@ export default function Projects() {
         <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
           <ReactCardFlip isFlipped={flipped1} flipDirection="horizontal">
             <div
-              className=" w-80 h-96 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped1((prev) => !prev)}
-              style={glassCardStyle}
-            >
-              <div className=" flex flex-col h-full w-full justify-around items-center">
-                <p className="text-white font-bold text-xl">World Clock</p>
-                <div className="flex w-full justify-around">
-                  <p className="text-white text-sm">
-                    <span>⚪</span> React
-                  </p>
-                  <p className="text-white text-sm">
-                    <span>⚪</span> API
-                  </p>
-                  <p className="text-white text-sm">
-                    <span>⚪</span> Tailwind
-                  </p>
-                </div>
-                <Image
-                  src={worldClock}
-                  alt="Project Image"
-                  width={900}
-                  height={900}
-                  className="object-cover rounded-md"
-                />
-              </div>
-            </div>
-
-            <div
-              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped1((prev) => !prev)}
-              style={glassCardStyle}
-            >
-              <div className="flex flex-col justify-evenly h-full">
-                <div>
-                  <p className="text-white text-xl font-bold text-center">
-                    World Clock
-                  </p>
-                </div>
-
-                <div className="text-white text-center">
-                  <p>
-                    A world clock project developed in school where the focus
-                    was to learn React Router and Tailwind CSS.
-                  </p>
-                </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
-                  <a href="https://world-clock-chi.vercel.app/" target="_blank">
-                    <div className="flex justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center">Take A Peek</p>
-                      <p className="flex items-end">
-                        <Image src={peek} width={42} height={30} />
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/Emma-Johanssons/WorldClockChas"
-                    target="_blank"
-                  >
-                    <div className="flex justify-center gap-2 bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center">See Code </p>
-                      <p className="flex items-end">
-                        <Image src={computer} width={40} height={30} />
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={flipped2} flipDirection="horizontal">
-            <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped2((prev) => !prev)}
+              onClick={() => setFlipped1((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -131,7 +61,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped2((prev) => !prev)}
+              onClick={() => setFlipped1((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -174,10 +104,10 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={flipped3} flipDirection="horizontal">
+          <ReactCardFlip isFlipped={flipped2} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped3((prev) => !prev)}
+              onClick={() => setFlipped2((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -209,7 +139,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped3((prev) => !prev)}
+              onClick={() => setFlipped2((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -244,12 +174,10 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-        </div>
-        <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
-          <ReactCardFlip isFlipped={flipped4} flipDirection="horizontal">
+          <ReactCardFlip isFlipped={flipped3} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped4((prev) => !prev)}
+              onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -282,7 +210,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped4((prev) => !prev)}
+              onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -320,10 +248,12 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={flipped5} flipDirection="horizontal">
+        </div>
+        <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
+          <ReactCardFlip isFlipped={flipped4} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped5((prev) => !prev)}
+              onClick={() => setFlipped4((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -351,7 +281,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped5((prev) => !prev)}
+              onClick={() => setFlipped4((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -396,10 +326,10 @@ export default function Projects() {
             </div>
           </ReactCardFlip>
 
-          <ReactCardFlip isFlipped={flipped6} flipDirection="horizontal">
+          <ReactCardFlip isFlipped={flipped5} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped6((prev) => !prev)}
+              onClick={() => setFlipped5((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -419,13 +349,9 @@ export default function Projects() {
                 <Image
                   src={adsaver}
                   alt="Project Image"
-                  className="rounded-md  "
+                  className="rounded-md object-cover "
                 />
-                {/* <Image
-                  src={adsaver2}
-                  alt="Project Image"
-                  className="rounded-md   object-cover"
-                /> */}
+
                 <Image
                   src={adsaver3}
                   alt="Project Image"
@@ -436,7 +362,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped6((prev) => !prev)}
+              onClick={() => setFlipped5((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -458,6 +384,75 @@ export default function Projects() {
                 <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
                   <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                     <a href="https://adsaver.org" target="_blank">
+                      <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                        <p className="flex items-center"> Take A Peek</p>
+                        <p className="flex items-end">
+                          <Image src={peek} width={42} height={30} />
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ReactCardFlip>
+          <ReactCardFlip isFlipped={flipped6} flipDirection="horizontal">
+            <div
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
+              onClick={() => setFlipped6((prev) => !prev)}
+              style={glassCardStyle}
+            >
+              <div className="flex  h-full flex-col justify-around items-center">
+                <p className="text-white font-bold text-xl">Mentatt</p>
+                <div className="flex justify-around w-full">
+                  <p className="text-white text-sm">
+                    <span>⚪</span>NextJS
+                  </p>
+
+                  <p className="text-white text-sm">
+                    <span>⚪</span>i18next
+                  </p>
+                  <p className="text-white text-sm">
+                    <span>⚪</span>Tailwind
+                  </p>
+                </div>
+
+                <Image
+                  src={mentatt1}
+                  alt="Project Image"
+                  className="rounded-md object-cover  "
+                />
+                <Image
+                  src={mentatt2}
+                  alt="Project Image"
+                  className="rounded-md object-cover "
+                />
+              </div>
+            </div>
+
+            <div
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
+              onClick={() => setFlipped6((prev) => !prev)}
+              style={glassCardStyle}
+            >
+              <div className="flex flex-col justify-evenly h-full">
+                <div>
+                  <p className="text-white text-xl font-bold text-center">
+                    Mentatt <br />
+                  </p>
+                </div>
+
+                <div className="text-white text-center">
+                  <p>
+                    I helped build a website for a Mental Health startup,
+                    gaining valuable experience diving into existing codebase.
+                    My focus was content creation, styling and implementing
+                    multi-language translation using i18next.
+                  </p>
+                </div>
+                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
+                  <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                    <a href="https://www.mentatt.com" target="_blank">
                       <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
                         <p className="flex items-center"> Take A Peek</p>
                         <p className="flex items-end">

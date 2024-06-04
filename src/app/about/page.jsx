@@ -8,7 +8,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export default function About() {
   function handleDownload() {
-    const cvPath = "/assets/emmajohansson, cv.pdf";
+    const cvPath = "/assets/resume-emmajohansson.pdf";
     console.log(cvPath);
   }
   const glassCardStyle = {
@@ -53,7 +53,7 @@ export default function About() {
                 <MdOutlineEmail className="text-white text-3xl hover:text-[#02b9b4]" />
               </a>
               <p className="text-white hover:text-[#02b9b4] hover:underline">
-                <a download href="./emmajohansson-cv.pdf">
+                <a download href="./resume-emmajohansson.pdf">
                   Download CV
                 </a>
               </p>
