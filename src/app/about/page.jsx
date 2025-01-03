@@ -25,7 +25,6 @@ export default function About() {
           className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-3/4 lg:w-2/3"
           style={glassCardStyle}
         >
-          {/* Left Column - Profile Section */}
           <div className="flex flex-col items-center text-center md:w-1/3">
             <Image
               src={linkedin}

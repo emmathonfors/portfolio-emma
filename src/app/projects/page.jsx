@@ -75,7 +75,7 @@ export default function Projects() {
                     Native, with an API integration for real-time weather data.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-2 justify-between ">
                   <a
                     href="https://weather-cado-next.vercel.app/Home"
                     target="_blank"
@@ -158,7 +158,7 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
+                <div className="flex md:flex-row flex-col md:justify-center gap-4  justify-between ">
                   <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                     <a
                       href="https://github.com/ChasAcademy-Linnea-Svensson/RebelRunway"
@@ -183,9 +183,9 @@ export default function Projects() {
               onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
-              <div className="flex  h-full flex-col justify-around items-center">
-                <p className="text-white font-bold text-xl mb-2">AI PandaPal</p>
-                <div className="flex justify-around w-full mb-2">
+              <div className="flex h-full flex-col justify-around items-center">
+                <p className="text-white font-bold text-xl ">AI PandaPal</p>
+                <div className="flex justify-around w-full ">
                   <p className="text-white text-sm">
                     <span>⚪</span>NextJS
                   </p>
@@ -201,7 +201,7 @@ export default function Projects() {
                 <Image
                   src={pandapal}
                   alt="Project Image"
-                  className="rounded-md object-cover"
+                  className="rounded-md w-full h-auto object-cover"
                 />
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function Projects() {
                     companion for moments when you need someone to lean on.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-2  justify-between ">
                   <a
                     href="https://zippy-daffodil-402433.netlify.app/client"
                     target="_blank"
@@ -309,7 +309,7 @@ export default function Projects() {
                     be able to reuse or edit them for future campaigns.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
+                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-2  justify-between ">
                   <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                     <a href="https://adsaver.org" target="_blank">
                       <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
@@ -378,7 +378,7 @@ export default function Projects() {
                     multi-language translation using i18next.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
+                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-2  justify-between ">
                   <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
                     <a href="https://www.mentatt.com" target="_blank">
                       <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
@@ -453,7 +453,7 @@ export default function Projects() {
                     the future.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                <div className="flex md:flex-row flex-col gap-4 md:gap-2   justify-between ">
                   <a
                     href="https://movie-generator-i53u-yv48iaocd-emmas-projects-c8b5acd9.vercel.app/"
                     target="_blank"
