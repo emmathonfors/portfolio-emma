@@ -27,6 +27,9 @@ export default function Projects() {
     backdropFilter: "blur(10px)",
     borderRadius: "8px",
   };
+  const handleTouchStart = (setFlipped) => {
+    setFlipped((prev) => !prev);
+  };
   return (
     <div className="bg-gradient-to-br from-[#002841] to-black min-w-screen py-2">
       <h1 className="text-white text-center font-bold text-xl">Projects</h1>
@@ -36,6 +39,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped1((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped1)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -60,6 +64,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped1((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped1)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -107,6 +112,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped2((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped2)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -140,6 +146,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped2((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped2)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -181,6 +188,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped3((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped3)}
               style={glassCardStyle}
             >
               <div className="flex h-full flex-col justify-around items-center">
@@ -209,6 +217,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped3((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped3)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -258,6 +267,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped4((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped4)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -291,6 +301,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped4((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped4)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -328,6 +339,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped5((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped5)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -361,6 +373,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped5((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped5)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -397,6 +410,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped6((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped6)}
               style={glassCardStyle}
             >
               <div className="flex h-full flex-col justify-around items-center">
@@ -431,6 +445,7 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped6((prev) => !prev)}
+              onTouchStart={() => handleTouchStart(setFlipped6)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
