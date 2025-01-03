@@ -44,7 +44,7 @@ export default function TechStack() {
         </div>
       </div>
       <div className="h-full flex flex-wrap md:flex-nowrap justify-center md:justify-around items-center gap-4 mt-4">
-        <div>
+        <div className="md:mr-0 lg:mr-0 sm:mr-0 mr-3 ">
           <Image src={fastapi} alt="fastapi logo" width={60} height={60} />
         </div>
         <div>
@@ -53,7 +53,7 @@ export default function TechStack() {
         <div>
           <Image src={python} alt="python logo" width={70} height={70} />
         </div>
-        <div className=" scale-150 transition-transform duration-300">
+        <div className=" scale-150 transition-transform duration-300 ml-6 md:ml-0 lg:ml-0 sm:ml-0">
           <Image src={pandas} alt="pandas logo" width={70} height={70} />
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import peek from "/public/peek.png";
 import computer from "/public/computer.png";
 import avocados from "/public/avocado1.png";
