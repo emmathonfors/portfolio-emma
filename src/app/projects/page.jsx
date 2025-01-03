@@ -35,7 +35,7 @@ export default function Projects() {
         <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
           <ReactCardFlip isFlipped={flipped1} flipDirection="horizontal">
             <div
-              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped1((prev) => !prev)}
               style={glassCardStyle}
             >
