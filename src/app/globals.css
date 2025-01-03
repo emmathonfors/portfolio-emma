@@ -41,6 +41,7 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 8px;
-  position: relative;
-  overflow: hidden;
+
+  /* Fallback */
+  background-color: blue;
 }
