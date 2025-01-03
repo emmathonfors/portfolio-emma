@@ -5,9 +5,6 @@ import Image from "next/legacy/image";
 import peek from "/public/peek.png";
 import computer from "/public/computer.png";
 import avocados from "/public/avocado1.png";
-import worldClock from "/public/worldclock.png";
-import primus from "/public/primus.png";
-import chas from "/public/chas.png";
 import rebel from "/public/rebel.png";
 import runway from "/public/runway.png";
 import pandapal from "/public/pandapal.png";
@@ -15,6 +12,7 @@ import adsaver from "/public/adsaver.png";
 import adsaver3 from "/public/adsaver3.png";
 import mentatt1 from "/public/mentatt1.png";
 import mentatt2 from "/public/mentatt2.png";
+import mg1 from "/public/mg1.png";
 
 export default function Projects() {
   const [flipped1, setFlipped1] = useState(false);
@@ -30,7 +28,7 @@ export default function Projects() {
     borderRadius: "8px",
   };
   return (
-    <div className="bg-gradient-to-br from-[#002841] to-black min-w-screen">
+    <div className="bg-gradient-to-br from-[#002841] to-black min-w-screen py-2">
       <h1 className="text-white text-center font-bold text-xl">Projects</h1>
       <div className="flex flex-col gap-6 p-4">
         <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
@@ -104,80 +102,11 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
+
           <ReactCardFlip isFlipped={flipped2} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped2((prev) => !prev)}
-              style={glassCardStyle}
-            >
-              <div className="flex  h-full flex-col justify-around items-center">
-                <p className="text-white font-bold text-xl">Chas Challenge</p>
-                <div className="flex justify-around w-full">
-                  <p className="text-white text-sm">
-                    <span>⚪</span>NextJS
-                  </p>
-
-                  <p className="text-white text-sm">
-                    <span>⚪</span>Tailwind
-                  </p>
-                  <p className="text-white text-sm">
-                    <span>⚪</span>Firebase
-                  </p>
-                </div>
-                <Image
-                  src={primus}
-                  alt="Project Image"
-                  className="rounded-md max-w-full h-auto object-cover"
-                />
-                <Image
-                  src={chas}
-                  alt="Project Image"
-                  className="rounded-md max-w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-
-            <div
-              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped2((prev) => !prev)}
-              style={glassCardStyle}
-            >
-              <div className="flex flex-col justify-evenly h-full">
-                <div>
-                  <p className="text-white text-xl font-bold text-center">
-                    Chas Challenge
-                  </p>
-                </div>
-
-                <div className="text-white text-center">
-                  <p>
-                    A school project where Frontend developers collaborated with
-                    UX designers and DevOps. <br /> Our group built a school
-                    union website, but the primary goal was to learn
-                    collaboration and combining skills from different
-                    professions.
-                  </p>
-                </div>
-                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-0  justify-between ">
-                  <a
-                    href="https://gitlab.com/melinaasplund/chaschallenge"
-                    target="_blank"
-                  >
-                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-4 hover:bg-[#02b9b4]">
-                      <p className="flex items-center">See Code</p>
-                      <p className="flex items-end">
-                        <Image src={computer} width={40} height={30} />
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </ReactCardFlip>
-          <ReactCardFlip isFlipped={flipped3} flipDirection="horizontal">
-            <div
-              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -210,7 +139,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped3((prev) => !prev)}
+              onClick={() => setFlipped2((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -248,12 +177,10 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-        </div>
-        <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
-          <ReactCardFlip isFlipped={flipped4} flipDirection="horizontal">
+          <ReactCardFlip isFlipped={flipped3} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped4((prev) => !prev)}
+              onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -281,7 +208,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped4((prev) => !prev)}
+              onClick={() => setFlipped3((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -325,11 +252,12 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-
-          <ReactCardFlip isFlipped={flipped5} flipDirection="horizontal">
+        </div>
+        <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
+          <ReactCardFlip isFlipped={flipped4} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped5((prev) => !prev)}
+              onClick={() => setFlipped4((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -362,7 +290,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped5((prev) => !prev)}
+              onClick={() => setFlipped4((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -396,10 +324,10 @@ export default function Projects() {
               </div>
             </div>
           </ReactCardFlip>
-          <ReactCardFlip isFlipped={flipped6} flipDirection="horizontal">
+          <ReactCardFlip isFlipped={flipped5} flipDirection="horizontal">
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
-              onClick={() => setFlipped6((prev) => !prev)}
+              onClick={() => setFlipped5((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
@@ -432,7 +360,7 @@ export default function Projects() {
 
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
-              onClick={() => setFlipped6((prev) => !prev)}
+              onClick={() => setFlipped5((prev) => !prev)}
               style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
@@ -461,6 +389,93 @@ export default function Projects() {
                       </div>
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </ReactCardFlip>
+          <ReactCardFlip isFlipped={flipped6} flipDirection="horizontal">
+            <div
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
+              onClick={() => setFlipped6((prev) => !prev)}
+              style={glassCardStyle}
+            >
+              <div className="flex h-full flex-col justify-around items-center">
+                <p className="text-white font-bold text-xl">Movie Generator</p>
+                <div className="flex justify-around w-full mb-1">
+                  <div>
+                    <p className="text-white text-xs">
+                      <span>⚪</span>React
+                    </p>
+                    <p className="text-white text-xs">
+                      <span>⚪</span>Python & FastAPI
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-white text-xs">
+                      <span>⚪</span>SQLAlchemy
+                    </p>
+                    <p className="text-white text-xs">
+                      <span>⚪</span>PostgreSQL
+                    </p>
+                  </div>
+                </div>
+
+                <Image
+                  src={mg1}
+                  alt="Project Image"
+                  className="rounded-md object-fill "
+                />
+              </div>
+            </div>
+
+            <div
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
+              onClick={() => setFlipped6((prev) => !prev)}
+              style={glassCardStyle}
+            >
+              <div className="flex flex-col justify-evenly h-full">
+                <div>
+                  <p className="text-white text-xl font-bold text-center">
+                    Movie Generator <br />{" "}
+                    <span className=" font-semibold italic">
+                      Under development
+                    </span>
+                  </p>
+                </div>
+
+                <div className="text-white text-center">
+                  <p>
+                    A project with secure JWT login using Python JOSE and
+                    FastAPI. The backend uses PostgreSQL and SQLAlchemy 2 for
+                    managing data and the TMDB API to fetch movies. The frontend
+                    is built with React. The project is currently under
+                    development, with plans to add AI and machine learning in
+                    the future.
+                  </p>
+                </div>
+                <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                  <a
+                    href="https://movie-generator-i53u-yv48iaocd-emmas-projects-c8b5acd9.vercel.app/"
+                    target="_blank"
+                  >
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                      <p className="flex items-center"> Take A Peek</p>
+                      <p className="flex items-end">
+                        <Image src={peek} width={42} height={30} />
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/Emma-Johanssons/movie_generator"
+                    target="_blank"
+                  >
+                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                      <p className="flex items-center"> See Code</p>
+                      <p className="flex items-end">
+                        <Image src={computer} width={40} height={30} />
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

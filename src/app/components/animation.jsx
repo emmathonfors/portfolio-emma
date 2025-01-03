@@ -7,8 +7,8 @@ const Lottie = dynamic(() => import("lottie-web"), { ssr: false });
 import animation from "../assets/animation.json";
 
 export default function Animation() {
-  const animationRef = useRef();
-  const [animate, setAnimate] = useState(false);
+  const animationRef = useRef(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     let lottieInstance;
@@ -25,9 +25,8 @@ export default function Animation() {
       });
     };
 
-    if (animate) {
+    if (isLoaded) {
       loadLottie();
-      animationRef.current.style.animation = "slideAndRotate 5s ease-in-out";
     }
 
     return () => {
@@ -35,26 +34,38 @@ export default function Animation() {
         lottieInstance.destroy();
       }
     };
-  }, [animate]);
+  }, [isLoaded]);
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setAnimate(true);
-    }, 100);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsLoaded(true); // Ladda animationen när den är synlig
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (animationRef.current) {
+      observer.observe(animationRef.current);
+    }
 
     return () => {
-      clearTimeout(timeoutId);
+      if (animationRef.current) {
+        observer.unobserve(animationRef.current);
+      }
     };
   }, []);
 
   return (
     <div
       ref={animationRef}
-      className={`p-2 ${
-        animate
-          ? "transform translate-x-0"
-          : "transform translate-x-[-200%] opacity-0"
-      }`}
+      className="p-2"
+      style={{
+        width: "300px",
+        height: "300px",
+        animation: isLoaded ? "slideIn 1s ease-in-out" : "none",
+      }}
     ></div>
   );
 }

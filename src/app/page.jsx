@@ -14,9 +14,8 @@ export default function Home() {
         <LandingPage />
       </section>
 
-      <div className="bg-[#EDC6B1] "></div>
       <section id="projectsSection">
-        <div className="bg-gradient-to-tr from-[#002841] to-black min-w-screen h-40 border-b-2 border-b-[#02b9b4] ">
+        <div>
           <TechStack />
         </div>
         <Projects />
