@@ -21,12 +21,6 @@ export default function Projects() {
   const [flipped4, setFlipped4] = useState(false);
   const [flipped5, setFlipped5] = useState(false);
   const [flipped6, setFlipped6] = useState(false);
-  const glassCardStyle = {
-    backgroundColor: "rgba(255, 255, 255, 0.1)",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    backdropFilter: "blur(10px)",
-    borderRadius: "8px",
-  };
 
   return (
     <div className="bg-gradient-to-br from-[#002841] to-black min-w-screen py-2">
@@ -35,9 +29,8 @@ export default function Projects() {
         <div className="flex flex-wrap gap-6 md:gap-6 justify-around items-center">
           <ReactCardFlip isFlipped={flipped1} flipDirection="horizontal">
             <div
-              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
+              className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped1((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
                 <p className="text-white font-bold text-xl">WeatherCado</p>
@@ -61,7 +54,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped1((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
                 <div>
@@ -108,7 +100,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped2((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
                 <p className="text-white font-bold text-xl">Rebel Runway</p>
@@ -141,7 +132,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped2((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
                 <div>
@@ -182,7 +172,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped3((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex h-full flex-col justify-around items-center">
                 <p className="text-white font-bold text-xl ">AI PandaPal</p>
@@ -210,7 +199,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped3((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
                 <div>
@@ -259,7 +247,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped4((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
                 <p className="text-white font-bold text-xl">AdSaver</p>
@@ -292,7 +279,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped4((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
                 <div>
@@ -329,7 +315,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped5((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex  h-full flex-col justify-around items-center">
                 <p className="text-white font-bold text-xl">Mentatt</p>
@@ -362,7 +347,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped5((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
                 <div>
@@ -398,7 +382,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer overflow-hidden box-border"
               onClick={() => setFlipped6((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex h-full flex-col justify-around items-center">
                 <p className="text-white font-bold text-xl">Movie Generator</p>
@@ -432,7 +415,6 @@ export default function Projects() {
             <div
               className="w-80 h-96 bg-gray-200 rounded-md shadow-md p-4 cursor-pointer"
               onClick={() => setFlipped6((prev) => !prev)}
-              style={glassCardStyle}
             >
               <div className="flex flex-col justify-evenly h-full">
                 <div>
