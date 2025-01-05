@@ -4,7 +4,7 @@ import Image from "next/image";
 import linkedin from "/public/linkedin.jpg";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineMail } from "react-icons/md";
 
 export default function About() {
   const glassCardStyle = {
@@ -22,7 +22,7 @@ export default function About() {
     >
       <div className="flex items-center justify-center min-h-screen p-4">
         <div
-          className="flex flex-col md:flex-row md:justify-between items-center w-full md:w-3/4 lg:w-2/3"
+          className="flex flex-col gap-4 md:flex-row md:justify-between items-center w-full md:w-3/4 lg:w-2/3"
           style={glassCardStyle}
         >
           <div className="flex flex-col items-center text-center md:w-1/3">
@@ -37,23 +37,24 @@ export default function About() {
             <p className="font-bold text-3xl text-[#02b9b4] mb-4">
               Emma Johansson
             </p>
-            <div className="flex gap-4 justify-center mb-4">
+            <div className="flex gap-4 justify-center items-center mb-4">
               <a
                 href="https://www.linkedin.com/in/emma-johansson-a553601b7"
                 target="_blank"
               >
                 <BsLinkedin className="text-white text-2xl hover:text-[#02b9b4]" />
               </a>
+
               <a href="https://github.com/Emma-Johanssons" target="_blank">
                 <FaGithub className="text-white text-2xl hover:text-[#02b9b4]" />
               </a>
-              <a href={`mailto:emmajohansson@gmail.com`}>
-                <MdOutlineEmail className="text-white text-3xl hover:text-[#02b9b4]" />
+              <a href={`mailto:mailtoemmajohansson@gmail.com`}>
+                <MdOutlineMail className="text-white text-3xl hover:text-[#02b9b4]" />
               </a>
             </div>
             <a
               download
-              href="./resume-emmajohansson.pdf"
+              href="./emma_johansson_cv2025.pdf"
               className="px-6 py-2 text-white bg-[#02b9b4] rounded-lg hover:bg-[#019f99] transition"
             >
               Download CV

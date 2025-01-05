@@ -191,7 +191,7 @@ export default function Projects() {
                 <Image
                   src={pandapal}
                   alt="Project Image"
-                  className="rounded-md w-full h-auto object-cover"
+                  className="rounded-md max-w-full scale-y-95 mt-1 h-auto object-cover"
                 />
               </div>
             </div>
