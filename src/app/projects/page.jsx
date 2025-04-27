@@ -13,6 +13,10 @@ import adsaver3 from "/public/adsaver3.png";
 import mentatt1 from "/public/mentatt1.png";
 import mentatt2 from "/public/mentatt2.png";
 import mg1 from "/public/mg1.png";
+import soccerx from "/public/soccerx.png";
+import soccerx3 from "/public/soccerx3.png";
+import soccerx4 from "/public/soccerx4.png";
+import soccerx6 from "/public/soccerx6.png";
 
 export default function Projects() {
   const [flipped1, setFlipped1] = useState(false);
@@ -384,30 +388,36 @@ export default function Projects() {
               onClick={() => setFlipped6((prev) => !prev)}
             >
               <div className="flex h-full flex-col justify-around items-center">
-                <p className="text-white font-bold text-xl">Movie Generator</p>
-                <div className="flex justify-around w-full mb-1">
+                <p className="text-white font-bold text-xl">SoccerX</p>
+                <div className="flex justify-around w-full">
                   <div>
                     <p className="text-white text-xs">
-                      <span>⚪</span>React
+                      <span>⚪</span>Python & FastAPI
                     </p>
                     <p className="text-white text-xs">
-                      <span>⚪</span>Python & FastAPI
+                      <span>⚪</span>AI & Machine Learning
                     </p>
                   </div>
                   <div>
                     <p className="text-white text-xs">
-                      <span>⚪</span>SQLAlchemy
+                      <span>⚪</span>PostgreSQL
                     </p>
                     <p className="text-white text-xs">
-                      <span>⚪</span>PostgreSQL
+                      <span>⚪</span>Docker
                     </p>
                   </div>
                 </div>
 
                 <Image
-                  src={mg1}
+                  src={soccerx}
                   alt="Project Image"
-                  className="rounded-md object-fill "
+                  className="rounded-md w-full  mt-2"
+                />
+
+                <Image
+                  src={soccerx6}
+                  alt="Project Image"
+                  className="rounded-md w-full h-[160px]  mt-2"
                 />
               </div>
             </div>
@@ -419,46 +429,32 @@ export default function Projects() {
               <div className="flex flex-col justify-evenly h-full">
                 <div>
                   <p className="text-white text-xl font-bold text-center">
-                    Movie Generator <br />{" "}
-                    <span className=" font-semibold italic">
-                      Under development
-                    </span>
+                    SoccerX
                   </p>
                 </div>
 
                 <div className="text-white text-center">
                   <p>
-                    A project with secure JWT login using Python JOSE and
-                    FastAPI. The backend uses PostgreSQL and SQLAlchemy 2 for
-                    managing data and the TMDB API to fetch movies. The frontend
-                    is built with React. The project is currently under
-                    development, with plans to add AI and machine learning in
-                    the future.
+                    An AI-powered football match prediction system that uses
+                    machine learning models (Random Forest, XGBoost, LightGBM)
+                    to predict match outcomes. The system analyzes historical
+                    data, team performance metrics, and real-time statistics.
+                    Built with an architecture using FastAPI, PostgreSQL, Redis,
+                    and Celery for robust, real-time predictions and up to date
+                    data.
                   </p>
                 </div>
-                <div className="flex md:flex-row flex-col gap-4 md:gap-2   justify-between ">
-                  <a
-                    href="https://movie-generator-i53u-yv48iaocd-emmas-projects-c8b5acd9.vercel.app/"
-                    target="_blank"
-                  >
-                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center"> Take A Peek</p>
-                      <p className="flex items-end">
-                        <Image src={peek} width={42} height={30} />
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/Emma-Johanssons/movie_generator"
-                    target="_blank"
-                  >
-                    <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
-                      <p className="flex items-center"> See Code</p>
-                      <p className="flex items-end">
-                        <Image src={computer} width={40} height={30} />
-                      </p>
-                    </div>
-                  </a>
+                <div className="flex md:flex-row flex-col md:justify-center gap-4 md:gap-2  justify-between ">
+                  <div className="flex md:flex-row flex-col gap-4 md:gap-0  justify-between ">
+                    <a href="https://soccerx.netlify.app/" target="_blank">
+                      <div className="flex gap-2 justify-center bg-white rounded py-1 px-2 hover:bg-[#02b9b4]">
+                        <p className="flex items-center"> Take A Peek</p>
+                        <p className="flex items-end">
+                          <Image src={peek} width={42} height={30} />
+                        </p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
