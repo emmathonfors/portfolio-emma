@@ -17,6 +17,9 @@ import soccerx from "/public/soccerx.png";
 import soccerx3 from "/public/soccerx3.png";
 import soccerx4 from "/public/soccerx4.png";
 import soccerx6 from "/public/soccerx6.png";
+import rsvp from "/public/rsvp.png";
+import welcome from "/public/welcome.png";
+import carousel from "/public/carousel.png";
 
 export default function Projects() {
   const [flipped1, setFlipped1] = useState(false);

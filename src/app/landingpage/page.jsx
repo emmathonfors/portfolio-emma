@@ -16,12 +16,12 @@ export default function LandingPage() {
             <div>
               <p className="sm:text-xl text-lg">Hello,</p>
               <p className="sm:text-3xl text-xl font-bold text-[#02b9b4]">
-                I´m Emma Johansson
+                I´m Emma Thonfors
               </p>
             </div>
             <p className="sm:text-xl text-lg italic">
-              - a web developer passionate about turning ideas into interactive
-              web experiences.
+              - an AI web developer passionate about turning ideas into
+              interactive web experiences.
               <br /> Let's create something amazing together!
             </p>
             <div className="flex mt-6 gap-10">

@@ -35,26 +35,26 @@ export default function About() {
               loading="lazy"
             />
             <p className="font-bold text-3xl text-[#02b9b4] mb-4">
-              Emma Johansson
+              Emma Thonfors
             </p>
             <div className="flex gap-4 justify-center items-center mb-4">
               <a
-                href="https://www.linkedin.com/in/emma-johansson-a553601b7"
+                href="https://www.linkedin.com/in/emma-thonfors-a553601b7/"
                 target="_blank"
               >
                 <BsLinkedin className="text-white text-2xl hover:text-[#02b9b4]" />
               </a>
 
-              <a href="https://github.com/Emma-Johanssons" target="_blank">
+              <a href="https://github.com/emmathonfors" target="_blank">
                 <FaGithub className="text-white text-2xl hover:text-[#02b9b4]" />
               </a>
-              <a href={`mailto:mailtoemmajohansson@gmail.com`}>
+              <a href={`mailto:emmathonfors@gmail.com`}>
                 <MdOutlineMail className="text-white text-3xl hover:text-[#02b9b4]" />
               </a>
             </div>
             <a
               download
-              href="./emma_johansson_cv2025.pdf"
+              href="./emmathonfors_cv.pdf"
               className="px-6 py-2 text-white bg-[#02b9b4] rounded-lg hover:bg-[#019f99] transition"
             >
               Download CV
