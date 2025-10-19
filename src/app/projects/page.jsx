@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactCardFlip from "react-card-flip";
 import Image from "next/image";
 import peek from "/public/peek.png";
@@ -29,6 +29,28 @@ export default function Projects() {
   const [flipped4, setFlipped4] = useState(false);
   const [flipped5, setFlipped5] = useState(false);
   const [flipped6, setFlipped6] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        ) || window.innerWidth <= 768
+      );
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const handleCardFlip = (setFlipFunction) => (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setFlipFunction((prev) => !prev);
+  };
 
   return (
     <div className="bg-gradient-to-br from-[#002841] to-black min-h-screen py-8">
@@ -56,8 +78,8 @@ export default function Projects() {
             >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={() => setFlipped1((prev) => !prev)}
-                onTouchStart={() => setFlipped1((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped1)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped1) : undefined}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -88,7 +110,6 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped1((prev) => !prev)}
-                onTouchStart={() => setFlipped1((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -153,8 +174,8 @@ export default function Projects() {
             >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={() => setFlipped2((prev) => !prev)}
-                onTouchStart={() => setFlipped2((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped2)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped2) : undefined}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -188,7 +209,6 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped2((prev) => !prev)}
-                onTouchStart={() => setFlipped2((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -254,8 +274,8 @@ export default function Projects() {
             >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={() => setFlipped3((prev) => !prev)}
-                onTouchStart={() => setFlipped3((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped3)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped3) : undefined}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -295,8 +315,8 @@ export default function Projects() {
 
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={() => setFlipped3((prev) => !prev)}
-                onTouchStart={() => setFlipped3((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped3)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped3) : undefined}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -336,8 +356,8 @@ export default function Projects() {
             >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={() => setFlipped4((prev) => !prev)}
-                onTouchStart={() => setFlipped4((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped4)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped4) : undefined}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -378,8 +398,8 @@ export default function Projects() {
 
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={() => setFlipped4((prev) => !prev)}
-                onTouchStart={() => setFlipped4((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped4)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped4) : undefined}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -415,8 +435,8 @@ export default function Projects() {
             >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={() => setFlipped5((prev) => !prev)}
-                onTouchStart={() => setFlipped5((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped5)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped5) : undefined}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -460,8 +480,8 @@ export default function Projects() {
 
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={() => setFlipped5((prev) => !prev)}
-                onTouchStart={() => setFlipped5((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped5)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped5) : undefined}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -515,8 +535,8 @@ export default function Projects() {
             >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={() => setFlipped6((prev) => !prev)}
-                onTouchStart={() => setFlipped6((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped6)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped6) : undefined}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -553,8 +573,8 @@ export default function Projects() {
 
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={() => setFlipped6((prev) => !prev)}
-                onTouchStart={() => setFlipped6((prev) => !prev)}
+                onClick={handleCardFlip(setFlipped6)}
+                onTouchEnd={isMobile ? handleCardFlip(setFlipped6) : undefined}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>

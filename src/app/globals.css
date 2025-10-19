@@ -41,39 +41,7 @@
   border-radius: 8px;
 }
 
-/* iOS Safari specific fixes for ReactCardFlip */
-@supports (-webkit-touch-callout: none) {
-  .react-card-flip {
-    -webkit-transform-style: preserve-3d !important;
-    transform-style: preserve-3d !important;
-    -webkit-perspective: 1000px !important;
-    perspective: 1000px !important;
-    -webkit-perspective-origin: center center !important;
-    perspective-origin: center center !important;
-  }
-
-  .react-card-flip .react-card-front,
-  .react-card-flip .react-card-back {
-    -webkit-backface-visibility: hidden !important;
-    backface-visibility: hidden !important;
-    -webkit-transform-style: preserve-3d !important;
-    transform-style: preserve-3d !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    -webkit-transform-origin: center center !important;
-    transform-origin: center center !important;
-  }
-
-  .react-card-flip .react-card-back {
-    -webkit-transform: rotateY(180deg) !important;
-    transform: rotateY(180deg) !important;
-  }
-}
-
-/* General mobile fixes */
+/* Mobile-specific fixes for ReactCardFlip */
 @media (max-width: 768px) {
   .react-card-flip {
     -webkit-transform-style: preserve-3d;
