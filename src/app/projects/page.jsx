@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import ReactCardFlip from "react-card-flip";
 import Image from "next/image";
 import peek from "/public/peek.png";
 import computer from "/public/computer.png";
@@ -168,24 +167,26 @@ export default function Projects() {
               </div>
             </div>
 
-            <ReactCardFlip
-              isFlipped={flipped2}
-              flipDirection="horizontal"
+            <div
+              className="w-80 h-[28rem] relative cursor-pointer"
               style={{
-                width: "100%",
-                height: "100%",
-                position: "relative",
-                overflow: "hidden",
                 perspective: "1000px",
                 WebkitPerspective: "1000px",
-                transformStyle: "preserve-3d",
-                WebkitTransformStyle: "preserve-3d",
               }}
+              onClick={handleCardFlip(setFlipped2)}
+              onTouchEnd={isMobile ? handleCardFlip(setFlipped2) : undefined}
             >
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={handleCardFlip(setFlipped2)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped2) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
+                style={{
+                  transform: flipped2 ? "rotateY(180deg)" : "rotateY(0deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -217,8 +218,16 @@ export default function Projects() {
               </div>
 
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={() => setFlipped2((prev) => !prev)}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
+                style={{
+                  transform: flipped2 ? "rotateY(0deg)" : "rotateY(-180deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -267,25 +276,27 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </ReactCardFlip>
-            <ReactCardFlip
-              isFlipped={flipped3}
-              flipDirection="horizontal"
+            </div>
+            <div
+              className="w-80 h-[28rem] relative cursor-pointer"
               style={{
-                width: "100%",
-                height: "100%",
-                position: "relative",
-                overflow: "hidden",
                 perspective: "1000px",
                 WebkitPerspective: "1000px",
-                transformStyle: "preserve-3d",
-                WebkitTransformStyle: "preserve-3d",
               }}
+              onClick={handleCardFlip(setFlipped3)}
+              onTouchEnd={isMobile ? handleCardFlip(setFlipped3) : undefined}
             >
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={handleCardFlip(setFlipped3)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped3) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0 overflow-hidden box-border"
+                style={{
+                  transform: flipped3 ? "rotateY(180deg)" : "rotateY(0deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -324,9 +335,16 @@ export default function Projects() {
               </div>
 
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={handleCardFlip(setFlipped3)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped3) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
+                style={{
+                  transform: flipped3 ? "rotateY(0deg)" : "rotateY(-180deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -347,27 +365,29 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </ReactCardFlip>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            <ReactCardFlip
-              isFlipped={flipped4}
-              flipDirection="horizontal"
+            <div
+              className="w-80 h-[28rem] relative cursor-pointer"
               style={{
-                width: "100%",
-                height: "100%",
-                position: "relative",
-                overflow: "hidden",
                 perspective: "1000px",
                 WebkitPerspective: "1000px",
-                transformStyle: "preserve-3d",
-                WebkitTransformStyle: "preserve-3d",
               }}
+              onClick={handleCardFlip(setFlipped4)}
+              onTouchEnd={isMobile ? handleCardFlip(setFlipped4) : undefined}
             >
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={handleCardFlip(setFlipped4)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped4) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0 overflow-hidden box-border"
+                style={{
+                  transform: flipped4 ? "rotateY(180deg)" : "rotateY(0deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -407,9 +427,16 @@ export default function Projects() {
               </div>
 
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={handleCardFlip(setFlipped4)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped4) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
+                style={{
+                  transform: flipped4 ? "rotateY(0deg)" : "rotateY(-180deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -428,25 +455,27 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </ReactCardFlip>
-            <ReactCardFlip
-              isFlipped={flipped5}
-              flipDirection="horizontal"
+            </div>
+            <div
+              className="w-80 h-[28rem] relative cursor-pointer"
               style={{
-                width: "100%",
-                height: "100%",
-                position: "relative",
-                overflow: "hidden",
                 perspective: "1000px",
                 WebkitPerspective: "1000px",
-                transformStyle: "preserve-3d",
-                WebkitTransformStyle: "preserve-3d",
               }}
+              onClick={handleCardFlip(setFlipped5)}
+              onTouchEnd={isMobile ? handleCardFlip(setFlipped5) : undefined}
             >
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={handleCardFlip(setFlipped5)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped5) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0 overflow-hidden box-border"
+                style={{
+                  transform: flipped5 ? "rotateY(180deg)" : "rotateY(0deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -489,9 +518,16 @@ export default function Projects() {
               </div>
 
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={handleCardFlip(setFlipped5)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped5) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
+                style={{
+                  transform: flipped5 ? "rotateY(0deg)" : "rotateY(-180deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -528,25 +564,27 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </ReactCardFlip>
-            <ReactCardFlip
-              isFlipped={flipped6}
-              flipDirection="horizontal"
+            </div>
+            <div
+              className="w-80 h-[28rem] relative cursor-pointer"
               style={{
-                width: "100%",
-                height: "100%",
-                position: "relative",
-                overflow: "hidden",
                 perspective: "1000px",
                 WebkitPerspective: "1000px",
-                transformStyle: "preserve-3d",
-                WebkitTransformStyle: "preserve-3d",
               }}
+              onClick={handleCardFlip(setFlipped6)}
+              onTouchEnd={isMobile ? handleCardFlip(setFlipped6) : undefined}
             >
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
-                onClick={handleCardFlip(setFlipped6)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped6) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0 overflow-hidden box-border"
+                style={{
+                  transform: flipped6 ? "rotateY(180deg)" : "rotateY(0deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -582,9 +620,16 @@ export default function Projects() {
               </div>
 
               <div
-                className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
-                onClick={handleCardFlip(setFlipped6)}
-                onTouchEnd={isMobile ? handleCardFlip(setFlipped6) : undefined}
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
+                style={{
+                  transform: flipped6 ? "rotateY(0deg)" : "rotateY(-180deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -623,7 +668,7 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </ReactCardFlip>
+            </div>
           </div>
         </div>
       </div>
