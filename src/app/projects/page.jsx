@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import ReactCardFlip from "react-card-flip";
 import Image from "next/image";
 import peek from "/public/peek.png";
 import computer from "/public/computer.png";
