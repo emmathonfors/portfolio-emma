@@ -49,6 +49,9 @@ export default function Projects() {
                 position: "relative",
                 overflow: "hidden",
                 perspective: "1000px",
+                WebkitPerspective: "1000px",
+                transformStyle: "preserve-3d",
+                WebkitTransformStyle: "preserve-3d",
               }}
             >
               <div
@@ -141,6 +144,9 @@ export default function Projects() {
                 position: "relative",
                 overflow: "hidden",
                 perspective: "1000px",
+                WebkitPerspective: "1000px",
+                transformStyle: "preserve-3d",
+                WebkitTransformStyle: "preserve-3d",
               }}
             >
               <div
@@ -237,6 +243,9 @@ export default function Projects() {
                 position: "relative",
                 overflow: "hidden",
                 perspective: "1000px",
+                WebkitPerspective: "1000px",
+                transformStyle: "preserve-3d",
+                WebkitTransformStyle: "preserve-3d",
               }}
             >
               <div
@@ -314,6 +323,9 @@ export default function Projects() {
                 position: "relative",
                 overflow: "hidden",
                 perspective: "1000px",
+                WebkitPerspective: "1000px",
+                transformStyle: "preserve-3d",
+                WebkitTransformStyle: "preserve-3d",
               }}
             >
               <div
@@ -388,6 +400,9 @@ export default function Projects() {
                 position: "relative",
                 overflow: "hidden",
                 perspective: "1000px",
+                WebkitPerspective: "1000px",
+                transformStyle: "preserve-3d",
+                WebkitTransformStyle: "preserve-3d",
               }}
             >
               <div
@@ -483,6 +498,9 @@ export default function Projects() {
                 position: "relative",
                 overflow: "hidden",
                 perspective: "1000px",
+                WebkitPerspective: "1000px",
+                transformStyle: "preserve-3d",
+                WebkitTransformStyle: "preserve-3d",
               }}
             >
               <div
