@@ -40,7 +40,17 @@ export default function Projects() {
         </div>
         <div className="flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            <ReactCardFlip isFlipped={flipped1} flipDirection="horizontal">
+            <ReactCardFlip
+              isFlipped={flipped1}
+              flipDirection="horizontal"
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                overflow: "hidden",
+                perspective: "1000px",
+              }}
+            >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped1((prev) => !prev)}
@@ -122,7 +132,17 @@ export default function Projects() {
               </div>
             </ReactCardFlip>
 
-            <ReactCardFlip isFlipped={flipped2} flipDirection="horizontal">
+            <ReactCardFlip
+              isFlipped={flipped2}
+              flipDirection="horizontal"
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                overflow: "hidden",
+                perspective: "1000px",
+              }}
+            >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped2((prev) => !prev)}
@@ -208,7 +228,17 @@ export default function Projects() {
                 </div>
               </div>
             </ReactCardFlip>
-            <ReactCardFlip isFlipped={flipped3} flipDirection="horizontal">
+            <ReactCardFlip
+              isFlipped={flipped3}
+              flipDirection="horizontal"
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                overflow: "hidden",
+                perspective: "1000px",
+              }}
+            >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped3((prev) => !prev)}
@@ -275,7 +305,17 @@ export default function Projects() {
             </ReactCardFlip>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            <ReactCardFlip isFlipped={flipped4} flipDirection="horizontal">
+            <ReactCardFlip
+              isFlipped={flipped4}
+              flipDirection="horizontal"
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                overflow: "hidden",
+                perspective: "1000px",
+              }}
+            >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped4((prev) => !prev)}
@@ -339,7 +379,17 @@ export default function Projects() {
                 </div>
               </div>
             </ReactCardFlip>
-            <ReactCardFlip isFlipped={flipped5} flipDirection="horizontal">
+            <ReactCardFlip
+              isFlipped={flipped5}
+              flipDirection="horizontal"
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                overflow: "hidden",
+                perspective: "1000px",
+              }}
+            >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped5((prev) => !prev)}
@@ -424,7 +474,17 @@ export default function Projects() {
                 </div>
               </div>
             </ReactCardFlip>
-            <ReactCardFlip isFlipped={flipped6} flipDirection="horizontal">
+            <ReactCardFlip
+              isFlipped={flipped6}
+              flipDirection="horizontal"
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                overflow: "hidden",
+                perspective: "1000px",
+              }}
+            >
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped6((prev) => !prev)}
