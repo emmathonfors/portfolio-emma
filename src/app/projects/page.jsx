@@ -639,10 +639,10 @@ export default function Projects() {
                   </div>
                   <div className="text-white text-center">
                     <p>
-                      A beautiful wedding website for a couple getting married
-                      in Antibes, France. Features travel information, local
-                      tips, and a complete RSVP system for guests. Built with
-                      React and PostgreSQL, fully deployed and functional.
+                      A wedding website for a couple getting married in Antibes,
+                      France. Features travel information, local tips, and a
+                      complete RSVP system for guests. Built with React and
+                      PostgreSQL, fully deployed and functional.
                     </p>
                   </div>
                   <div className="flex flex-col justify-center gap-3 justify-between">
