@@ -57,6 +57,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped1((prev) => !prev)}
+                onTouchStart={() => setFlipped1((prev) => !prev)}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -87,6 +88,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped1((prev) => !prev)}
+                onTouchStart={() => setFlipped1((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -152,6 +154,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped2((prev) => !prev)}
+                onTouchStart={() => setFlipped2((prev) => !prev)}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -185,6 +188,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped2((prev) => !prev)}
+                onTouchStart={() => setFlipped2((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -251,6 +255,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped3((prev) => !prev)}
+                onTouchStart={() => setFlipped3((prev) => !prev)}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -291,6 +296,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped3((prev) => !prev)}
+                onTouchStart={() => setFlipped3((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -331,6 +337,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped4((prev) => !prev)}
+                onTouchStart={() => setFlipped4((prev) => !prev)}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -372,6 +379,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped4((prev) => !prev)}
+                onTouchStart={() => setFlipped4((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -408,6 +416,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped5((prev) => !prev)}
+                onTouchStart={() => setFlipped5((prev) => !prev)}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -452,6 +461,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped5((prev) => !prev)}
+                onTouchStart={() => setFlipped5((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
@@ -506,6 +516,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer overflow-hidden box-border"
                 onClick={() => setFlipped6((prev) => !prev)}
+                onTouchStart={() => setFlipped6((prev) => !prev)}
               >
                 <div className="flex h-full flex-col justify-between items-center py-4">
                   <div className="text-center">
@@ -543,6 +554,7 @@ export default function Projects() {
               <div
                 className="glass-card w-80 h-[28rem] bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 cursor-pointer"
                 onClick={() => setFlipped6((prev) => !prev)}
+                onTouchStart={() => setFlipped6((prev) => !prev)}
               >
                 <div className="flex flex-col justify-evenly h-full">
                   <div>
