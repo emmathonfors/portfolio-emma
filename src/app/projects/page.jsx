@@ -46,6 +46,10 @@ export default function Projects() {
   }, []);
 
   const handleCardFlip = (setFlipFunction) => (e) => {
+    // Only flip if the click is not on a link or button
+    if (e.target.closest("a") || e.target.closest("button")) {
+      return;
+    }
     e.preventDefault();
     e.stopPropagation();
     setFlipFunction((prev) => !prev);
