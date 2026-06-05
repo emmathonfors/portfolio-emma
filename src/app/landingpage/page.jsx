@@ -20,8 +20,8 @@ export default function LandingPage() {
               </p>
             </div>
             <p className="sm:text-xl text-lg italic">
-              - an AI web developer passionate about turning ideas into
-              interactive web experiences.
+              - an AI Data Engineer passionate about building intelligent
+              systems and turning ideas into real world solutions.
               <br /> Let's create something amazing together!
             </p>
             <div className="flex mt-6 gap-10">

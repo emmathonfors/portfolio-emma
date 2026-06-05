@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import peek from "/public/peek.png";
 import computer from "/public/computer.png";
-import avocados from "/public/avocado1.png";
+import gmblInsight from "/public/gmbl-insight.png";
 import rebel from "/public/rebel.png";
 import runway from "/public/runway.png";
 import pandapal from "/public/pandapal.png";
@@ -65,112 +65,6 @@ export default function Projects() {
         </div>
         <div className="flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            <div
-              className="w-80 h-[28rem] relative cursor-pointer"
-              style={{
-                perspective: "1000px",
-                WebkitPerspective: "1000px",
-              }}
-              onClick={handleCardFlip(setFlipped1)}
-              onTouchEnd={isMobile ? handleCardFlip(setFlipped1) : undefined}
-            >
-              <div
-                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
-                style={{
-                  transform: flipped1 ? "rotateY(180deg)" : "rotateY(0deg)",
-                  transformStyle: "preserve-3d",
-                  WebkitTransformStyle: "preserve-3d",
-                  transition: "transform 0.6s ease-in-out",
-                  WebkitTransition: "transform 0.6s ease-in-out",
-                  backfaceVisibility: "hidden",
-                  WebkitBackfaceVisibility: "hidden",
-                }}
-              >
-                <div className="flex h-full flex-col justify-between items-center py-4">
-                  <div className="text-center">
-                    <h3 className="text-white font-bold text-2xl mb-4 tracking-wide">
-                      WeatherCado
-                    </h3>
-                    <div className="flex flex-wrap gap-2 justify-center">
-                      <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 text-center">
-                        React Native
-                      </span>
-                      <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-center">
-                        API
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex-1 flex items-center justify-center mt-4 max-h-72">
-                    <Image
-                      src={avocados}
-                      alt="WeatherCado app screenshot"
-                      className="rounded-xl w-full max-h-full object-cover shadow-xl"
-                      quality={95}
-                      priority
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
-                style={{
-                  transform: flipped1 ? "rotateY(0deg)" : "rotateY(-180deg)",
-                  transformStyle: "preserve-3d",
-                  WebkitTransformStyle: "preserve-3d",
-                  transition: "transform 0.6s ease-in-out",
-                  WebkitTransition: "transform 0.6s ease-in-out",
-                  backfaceVisibility: "hidden",
-                  WebkitBackfaceVisibility: "hidden",
-                }}
-              >
-                <div className="flex flex-col justify-evenly h-full">
-                  <div>
-                    <p className="text-white text-xl font-bold text-center">
-                      WeatherCado
-                    </p>
-                  </div>
-
-                  <div className="text-white text-center">
-                    <p>
-                      A weather app developed as a school project to learn React
-                      Native, with an API integration for real-time weather
-                      data.
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-3 justify-between ">
-                    <a
-                      href="https://weather-cado-next.vercel.app/Home"
-                      target="_blank"
-                    >
-                      <div className="flex gap-2 justify-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg py-2 px-4 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                        <p className="flex items-center font-medium">
-                          Take A Peek
-                        </p>
-                        <p className="flex items-end">
-                          <Image src={peek} width={20} height={15} />
-                        </p>
-                      </div>
-                    </a>
-                    <a
-                      href="https://github.com/Emma-Johanssons/weatherApp"
-                      target="_blank"
-                    >
-                      <div className="flex gap-2 justify-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg py-2 px-4 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                        <p className="flex items-center font-medium">
-                          {" "}
-                          See Code
-                        </p>
-                        <p className="flex items-end">
-                          <Image src={computer} width={20} height={15} />
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div
               className="w-80 h-[28rem] relative cursor-pointer"
               style={{
@@ -259,7 +153,7 @@ export default function Projects() {
                           Take A Peek
                         </p>
                         <p className="flex items-end">
-                          <Image src={peek} width={20} height={15} />
+                          <Image src={peek} width={20} height={15} alt="Peek icon" className="h-[15px] w-auto" />
                         </p>
                       </div>
                     </a>
@@ -273,7 +167,7 @@ export default function Projects() {
                           See Code
                         </p>
                         <p className="flex items-end">
-                          <Image src={computer} width={20} height={15} />
+                          <Image src={computer} width={20} height={15} alt="Code icon" className="h-[15px] w-auto" />
                         </p>
                       </div>
                     </a>
@@ -370,8 +264,6 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             <div
               className="w-80 h-[28rem] relative cursor-pointer"
               style={{
@@ -460,6 +352,8 @@ export default function Projects() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             <div
               className="w-80 h-[28rem] relative cursor-pointer"
               style={{
@@ -560,7 +454,7 @@ export default function Projects() {
                             Take A Peek
                           </p>
                           <p className="flex items-end">
-                            <Image src={peek} width={20} height={15} />
+                            <Image src={peek} width={20} height={15} alt="Peek icon" className="h-[15px] w-auto" />
                           </p>
                         </div>
                       </a>
@@ -665,7 +559,111 @@ export default function Projects() {
                             width={20}
                             height={15}
                             alt="Peek icon"
+                            className="h-[15px] w-auto"
                           />
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="w-80 h-[28rem] relative cursor-pointer"
+              style={{
+                perspective: "1000px",
+                WebkitPerspective: "1000px",
+              }}
+              onClick={handleCardFlip(setFlipped1)}
+              onTouchEnd={isMobile ? handleCardFlip(setFlipped1) : undefined}
+            >
+              <div
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0 overflow-hidden box-border"
+                style={{
+                  transform: flipped1 ? "rotateY(180deg)" : "rotateY(0deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
+              >
+                <div className="flex h-full flex-col justify-between items-center py-4">
+                  <div className="text-center">
+                    <h3 className="text-white font-bold text-2xl mb-4 tracking-wide">
+                      AI Treatment Platform
+                    </h3>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-violet-500/20 text-violet-300 border border-violet-400/30 text-center">
+                        LLM & Fine-tuning
+                      </span>
+                      <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-400/30 text-center">
+                        RAG
+                      </span>
+                      <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-rose-500/20 text-rose-300 border border-rose-400/30 text-center">
+                        Prompt Engineering
+                      </span>
+                      <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium bg-sky-500/20 text-sky-300 border border-sky-400/30 text-center">
+                        Cloud Server
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex-1 flex items-stretch justify-center mt-4 max-h-72 w-full">
+                    <Image
+                      src={gmblInsight}
+                      alt="AI treatment platform screenshot"
+                      className="rounded-xl w-full h-full max-h-72 object-cover object-center shadow-xl border-2 border-white/10"
+                      quality={95}
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="glass-card w-full h-full bg-gradient-to-br from-slate-800/95 to-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-600/30 p-6 absolute inset-0"
+                style={{
+                  transform: flipped1 ? "rotateY(0deg)" : "rotateY(-180deg)",
+                  transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
+                  transition: "transform 0.6s ease-in-out",
+                  WebkitTransition: "transform 0.6s ease-in-out",
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden",
+                }}
+              >
+                <div className="flex flex-col justify-evenly h-full">
+                  <div>
+                    <p className="text-white text-xl font-bold text-center">
+                      AI Treatment Platform
+                    </p>
+                  </div>
+                  <div className="text-white text-center">
+                    <p>
+                      Built and fine-tuned an AI solution for a gambling addiction
+                      treatment platform using LLM fine-tuning, RAG, and prompt
+                      engineering. Developed a Python and React demo platform to
+                      evaluate AI responses and configured the full server setup
+                      on Hetzner with Docker, Redis, Celery, and serverless GPU
+                      endpoints.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-3 justify-between">
+                    <a
+                      href="#contactSection"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document
+                          .querySelector("#contactSection")
+                          ?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                    >
+                      <div className="flex gap-2 justify-center bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg py-2 px-4 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                        <p className="flex flex-col items-center font-medium text-center leading-snug">
+                          <span>Want to know more?</span>
+                          <span>Contact me</span>
                         </p>
                       </div>
                     </a>
